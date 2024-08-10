@@ -2,6 +2,7 @@
 
 ## Directory structure:
 
+```
 blazetorrent/
 ├── cmd/
 │ └── blazecli/
@@ -23,3 +24,4 @@ blazetorrent/
 ├── tests/
 ├── go.mod
 └── README.md
+```
