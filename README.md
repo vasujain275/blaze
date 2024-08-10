@@ -4,24 +4,31 @@
 
 ```
 blazetorrent/
+│
 ├── cmd/
-│ └── blazecli/
-│ └── main.go
+│   └── blazetorrent/
+│       └── main.go          # CLI entry point
+│
 ├── internal/
-│ ├── bencode/
-│ ├── tracker/
-│ ├── peer/
-│ ├── torrent/
-│ ├── magnet/
-│ └── storage/
+│   ├── bencode/
+│   │   ├── bencode.go       # Bencode parsing and encoding functions
+│   │   ├── decode.go        # Bencode decoding logic
+│   │   ├── encode.go        # Bencode encoding logic
+│   │   └── bencode_test.go  # Unit tests for Bencode functionality
+│   │
+│   └── torrent/
+│       ├── torrent.go       # Torrent-related functions
+│       ├── parse.go         # Torrent parsing logic
+│       ├── download.go      # Torrent download logic
+│       └── torrent_test.go  # Unit tests for torrent functionality
+│
 ├── pkg/
-│ └── blazetorrent/
-│ ├── client.go
-│ ├── torrent.go
-│ ├── config.go
-│ └── errors.go
-├── examples/
-├── tests/
-├── go.mod
-└── README.md
+│   └── blazetorrent/
+│       ├── blazetorrent.go  # Public API for the blazetorrent library
+│       ├── magnet.go        # Magnet link parsing logic
+│       └── torrent.go       # Torrent-related functions using internal packages
+│
+├── go.mod                   # Go module file
+└── go.sum                   # Go module dependencies
+
 ```
