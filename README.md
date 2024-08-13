@@ -1,12 +1,12 @@
-# Blazetorrent
+# Blaze
 
 ## Directory structure:
 
 ```
-blazetorrent/
+blaze/
 │
 ├── cmd/
-│   └── blazetorrent/
+│   └── blaze/
 │       └── main.go          # CLI entry point
 │
 ├── internal/
@@ -23,8 +23,8 @@ blazetorrent/
 │       └── torrent_test.go  # Unit tests for torrent functionality
 │
 ├── pkg/
-│   └── blazetorrent/
-│       ├── blazetorrent.go  # Public API for the blazetorrent library
+│   └── blaze/
+│       ├── blaze.go  # Public API for the blazetorrent library
 │       ├── magnet.go        # Magnet link parsing logic
 │       └── torrent.go       # Torrent-related functions using internal packages
 │
